@@ -3,10 +3,14 @@ import Description from "./Description";
 import PokeImg from "./PokeImg";
 
 const Pokemon = () => {
-  fetch("https://pokeapi.co/api/v2/pokemon").then((response) =>
+    const randomId = () => {
+        return Math.floor(Math.random() * 1281)
+    }
+
+  fetch(`https://pokeapi.co/api/v2/pokemon/${randomId()}`).then((response) =>
     response.json()
   ).then(data => {
-    console.log(data);
+    const {name, official_artwork, }
   });
 
   return (
