@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { useEffect, useState } from "react";
-import RenderData from "./components/RenderData";
+import Pokemon from "./components/Pokemon";
 import RandomBtn from "./components/RandomBtn";
 import Footer from "./components/Footer";
 
@@ -41,7 +41,7 @@ function App() {
 
   return (
     <div>
-      <RenderData name={name.toUpperCase()} image={image} description={description} />
+      <Pokemon name={name.toUpperCase()} image={image} description={description} />
       <RandomBtn newRandomId={generateRandomId} />
       <Footer />
     </div>

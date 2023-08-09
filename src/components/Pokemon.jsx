@@ -1,11 +1,11 @@
-import FetchImage from "./FetchImage";
-import FetchDescription from "./FetchDescription";
+import PokeImage from "./PokeImage";
+import PokedexEntry from "./PokedexEntry";
 
 const RenderData = ({ name, image, description }) => {
   return (
     <div>
-      <FetchImage pathToImage={image} alt={name} />
-      <FetchDescription name={name} description={description} />
+      <PokeImage pathToImage={image} alt={name} />
+      <PokedexEntry name={name} description={description} />
     </div>
   );
 };
