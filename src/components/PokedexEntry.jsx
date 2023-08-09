@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Description = (name, description) => {
+const PokedexEntry = (name, description) => {
   return (
     <div>
         <h1>{name}</h1>
@@ -9,4 +9,4 @@ const Description = (name, description) => {
   )
 }
 
-export default Description
+export default PokedexEntry
