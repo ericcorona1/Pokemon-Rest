@@ -1,6 +1,6 @@
 import React from 'react'
 
-const PokeImage = (pathToImage, name) => {
+const PokeImage = ({pathToImage, name}) => {
   return (
     <div>
       <img src={pathToImage} alt={name} />

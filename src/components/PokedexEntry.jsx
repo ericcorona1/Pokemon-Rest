@@ -1,6 +1,6 @@
 import React from 'react'
 
-const PokedexEntry = (name, description) => {
+const PokedexEntry = ({name, description}) => {
   return (
     <div>
         <h1>{name}</h1>
