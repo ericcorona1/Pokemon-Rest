@@ -3,7 +3,7 @@ import React from 'react'
 const PokedexEntry = ({name, description}) => {
   return (
     <div>
-        <h1>{name}</h1>
+        <h2>{name}</h2>
         <p>{description}</p>
     </div>
   )
